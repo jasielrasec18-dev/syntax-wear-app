@@ -1,13 +1,10 @@
-
-
 function App() {
-  
 
-  return (
-    <>
-
-    </>
-  )
+    return (
+        <>
+        <p className="bg-error">Hello World</p>
+        </>
+    )
 }
 
 export default App
