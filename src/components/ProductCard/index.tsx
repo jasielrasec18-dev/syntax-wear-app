@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import type { Product } from "../../interfaces/product"
 import { MdAddShoppingCart } from "react-icons/md";
+import { formatCurrency } from "../../utils/format-currency";
 
 interface ProductCardProps {
     product: Product
@@ -9,7 +10,7 @@ interface ProductCardProps {
 export const ProductCard = ({product} : ProductCardProps) => {
   return (
     <div className="bg-white rounded-2xl shadow-md">
-      <Link to="/products">
+      <Link to="/products/$product.id" params={{ productId: String(product.id) }}>
         <img
           className="w-full max-h-[400px] object-cover rounded-md mb-2"
           src={product.image}
@@ -23,7 +24,7 @@ export const ProductCard = ({product} : ProductCardProps) => {
         <p>{product.color}</p>
 
         <div className="flex justify-between mt-2.5">
-          <p className="font-bold">R${product.price},00</p>
+          <p className="font-bold">{formatCurrency(product.price)}</p>
 
           <button className="cursor-pointer">
             <MdAddShoppingCart className="h-7 w-7" />
