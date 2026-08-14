@@ -13,6 +13,7 @@ export const Gallery = () => {
   const router = useRouter();
 
   return (
+
     <div className="container">
       <div className={styles.galleryGrid}>
         <div
