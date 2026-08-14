@@ -26,7 +26,7 @@ export const ShoppingCart = () => {
         className={`${cartIsOpen ? "bg-black/70 visible" : "bg-transparent invisible"} fixed top-0 bottom-0 left-0 right-0`}
         onClick={() => setCartIsOpen(!cartIsOpen)}
       >
-        
+  
         <div
           className={`${cartIsOpen ? "translate-x-0" : "translate-x-full"} absolute top-0 right-0 bottom-0 bg-white pt-6 transition-all duration-500 ease-in-out w-75 md:w-100`}
           onClick={(e) => e.stopPropagation()}

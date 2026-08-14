@@ -1,6 +1,5 @@
 import Logo from "@/assets/images/logo.png";
 import IconUser from "@/assets/images/icon-user.png";
-import IconAbout from "@/assets/images/icon-about.png";
 import { Link } from "@tanstack/react-router";
 import { ShoppingCart } from "../ShoppingCart";
 import { MenuMobile } from "../MenuMobile";
