@@ -47,8 +47,11 @@ function RouteComponent() {
 
   const originalPrice = filteredProduct?.price ?? 0;
 
+  // 1.0 = 100% do valor
+  // 0.9 = 90% do valor
   const discountPrice = originalPrice * 0.9;
 
+  // preço parcelado
   const inInstallmentsPrice = originalPrice / 6;
 
   return (
